@@ -1,11 +1,11 @@
-AWSTemplateFormatVersion: '2010-09-09'
+lambda_functionAWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: An AWS Serverless Specification template describing your function.
 Resources:
   searchgateway:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: search_page.lambda_handler
+      Handler: lambda_function.lambda_handler
       Runtime: python3.10
       CodeUri: .
       Description: ''
